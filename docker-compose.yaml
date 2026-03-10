@@ -1,8 +1,6 @@
 services:
-  go-service:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  go-app:
+    build: .
     ports:
       - "8080:8080"
-    restart: unless-stopped
+    restart: always

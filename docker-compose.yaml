@@ -1,0 +1,4 @@
+services:
+  python-app:
+    build: .
+    command: python main.py

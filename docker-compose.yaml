@@ -1,6 +1,6 @@
 services:
-  nodejs-app:
+  express-todo-app:
     build: .
     ports:
       - "3000:3000"
-    command: node server.js
+    restart: unless-stopped
